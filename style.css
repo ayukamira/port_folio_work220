@@ -1,0 +1,937 @@
+@charset "UTF-8";
+/* CSS Document */
+html{
+	font-size:62.5%;/*16px × 62.5%=10px*/
+}
+
+body{
+	color:#00000;
+	font-family:'Yu Mincho', 'Hiragino Mincho ProN', 'serif';
+	font-size: 1.6rem;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+}
+.text-center{
+	text-align: center;
+}
+
+.sp__img{display:none;
+	     
+}
+img{
+	width: 100%;
+	height: auto;
+}
+a{
+	color: #FFFFFF;
+}
+.eng{
+	display: block;
+	text-align: center;
+	font-size: 2vw;
+}
+.jpn{
+	display: block;
+	text-align: center;
+	font-size: 1vw;
+	color:#294F75; 
+}
+.gtitle{
+	position: relative;
+	padding-top: 3%;
+}
+.gtitle::before{
+	content: "";
+    display: block;
+    position: absolute;
+    bottom: 70%;
+    left: 50%;
+    width: 1px;
+    height: 80px;
+    background-color: #111;
+	
+}
+
+/*------------------------------
+*
+*header
+*
+*
+--------------------------------*/
+.slide-top{
+  position   : relative;
+  overflow   : hidden;
+  width: 100%;
+  height: 600px;
+}
+.slide-top img{
+  display    : block;
+  position   : absolute;
+                      /* 画像のサイズを表示エリアに合せる */
+  width      : inherit;
+ height: inherit;
+  opacity    : 0;
+  animation  : slideAnime 15s ease infinite;
+}
+.slide-top img:nth-of-type(1) { animation-delay: 0s }
+.slide-top img:nth-of-type(2) { animation-delay: 3s }
+.slide-top img:nth-of-type(3) { animation-delay: 6s }
+.slide-top img:nth-of-type(4) { animation-delay: 9s }
+.slide-top img:nth-of-type(5) { animation-delay: 12s }
+ 
+@keyframes slideAnime{
+   0% { opacity: 0 }
+   2% { opacity: 1 }
+  18% { opacity: 1 }
+  20% { opacity: 0 }
+ 100% { opacity: 0 }
+}
+.top{
+	position:relative;
+}
+
+.top-text{
+	font-size: 3vw;
+	position: absolute;
+	left: 5%;
+	bottom: 100px;
+	line-height: 3em;
+}
+.top-text2{
+	color: #FFFFFF;
+}
+
+ .gnav nav{
+	background-color:rgba(255,255,255,0.7);
+    display:flex;
+    align-items:center;
+    width:100%;
+    margin:0 auto;
+	position: fixed;
+	z-index: 100;
+  }
+  .menu{
+    display: block;
+    margin:0 20px;
+    padding:1em 10px;
+    color:#000;
+    text-decoration:none;
+    letter-spacing:0em;
+	 
+  }
+.menu:hover{
+	text-decoration: underline;
+	}
+ .logo{
+    width:8%;
+    height:5%;
+    margin-right:auto;
+    margin-left:2%;
+  }
+	
+.gnav{
+	position: absolute;
+	top: 0.5px;
+	width: 100%;
+}
+/*------------------------------
+*
+*news
+*
+*
+--------------------------------*/
+.topics dl{
+ width:500px;
+margin: 0 auto;
+}
+.topics dt{
+ border-bottom:1px solid #ccc;
+  float:left;
+  padding:10px 5px;
+}
+.topics dd{
+ border-bottom:1px solid #ccc;
+  margin-left:100px;
+  padding:10px 5px;
+}
+.news-top{
+	display:flex;
+    align-items:center;
+    width:80%;
+}
+.gnews{
+	margin-right: auto;
+    margin-bottom: 10px;
+	position: relative;
+	display: block;
+	padding-left: 10%;
+}
+.news-title::before{
+	content: "";
+    display: block;
+    position: absolute;
+    top: 15px;
+    left:0;
+    width: 70px;
+    height: 1px;
+    background-color: #000;
+}
+.news-botton-text{
+	text-align: right;
+	width: 95%;
+	color: #294F75;
+}
+.news-botton-text:hover{
+	font-weight: bolder;
+}
+.news-botton-text {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.3s ease;
+}
+/*ホバーしたときに下線矢印も同時に色を変える*/
+.lineArrow {
+  width: 10%;
+  height: 15px;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+   /*傾きを調節*/
+  transform: skew(40deg);
+  margin-left: 92%;
+  margin-top: -1%;
+}
+
+.news{
+	margin-top: 10%;
+	margin-bottom: 5%;
+	
+}
+.news-title{
+	display: block;
+	font-size: 2vw;
+}
+.news-title2{
+	display: block;
+	font-size:1vw;
+	color: #294F75;
+}
+.topics{
+	font-size: 1vw;
+}
+.news-botton{
+	font-size: 1.3vw;
+}
+
+
+
+
+
+/*------------------------------
+*
+*abouttaoyo
+*
+*
+--------------------------------*/
+.abouttaiyo{
+	background-color:#EAEAEA;
+	margin-top: 20%;
+}
+
+.taiyo-img{
+	width: 50%;
+	margin-top: 5%;
+}
+.abouttaiyo{
+	position: relative;
+	margin-bottom: 10%;
+}
+.taiyo-text{
+	width: 30%;
+	margin: 0 50%;
+	word-wrap: break-word;
+	line-height: 3.5em;
+	font-size: 1vw;
+	background-color: #093756;
+	opacity: 0.75;
+	color: #FFFFFF;
+	padding: 8% 4%;
+	position: absolute;
+	bottom: -5%;
+	right: -30%;
+	
+}
+.taiyo-botton-text{
+	text-align: right;
+	width: 95%;
+	color: #294F75;
+}
+.taiyo-botton-text {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.3s ease;
+}
+.lineArrow2 {
+  width: 11%;
+  height: 15px;
+  border-bottom: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+   /*傾きを調節*/
+  transform: skew(40deg);
+  margin-left: 69%;
+  margin-top: -1%;
+}
+.taiyo-botton-text2{
+	margin-right: 22%;
+	color: #fff;
+	font-size: 1.3vw;
+}
+.taiyo-botton-text:hover .taiyo-botton-text2{
+	font-weight: bolder;
+}
+	
+/*------------------------------
+*
+*searvice
+*
+*
+--------------------------------*/
+.searvice{
+	margin-top: 20%;
+}
+.g-searvice{
+	position: relative;
+	height: auto;
+	background-image: url("../image/top/top-service-PC.png");
+	background-size: cover;
+	margin-top:-2%;
+}
+.gtitle-be{
+	position: relative;
+	padding-bottom:10%;
+}
+.gtitle-be::after{
+	content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    height: 80px;
+    background-color: #000;
+	
+}
+.border{
+	text-align: center;
+	font-size: 5vw;
+}
+
+.box-sear{
+	width: 100%;
+	height:auto;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(41,79,117,0.4);
+	padding-bottom: 5%;
+    padding-top: 10%;
+	
+}
+
+.list{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width:75%;
+	margin: auto;
+	
+}
+.ep{
+	width: 100%;
+	height:100%;
+	margin-left: 10%;
+	margin-right: auto;
+	background-color:#FFFFFF;
+	padding: 10% 2% 10%;
+}
+
+.pc{
+	width: 100%;
+	height:100%;
+	margin-left: 10%;
+	margin-right: 10%;
+	background-color:#FFFFFF;
+	padding: 7% 2% 10%;
+}
+
+.searvice-subtitle{
+	display: block;
+	padding-top: 7%;
+}
+.searvice-subtitle-en{
+	display: block;
+	color: #294F75;
+	font-size: 1vw;
+}
+.sear-image{
+	margin: 0 auto;
+	width: 30%;
+}
+.searvice-text{
+	display: block;
+    line-height: 2.5em;
+    font-size: 1vw;
+    padding-top: 10%;
+}
+.sear-botton{
+	margin: 2% auto;
+	width: 100%;
+	max-width: 15%;
+	padding:1%;
+	letter-spacing: 0.1em;
+	background-color:#093756; 
+}
+.sear-botton:hover{
+	margin: 2% auto;
+	width: 100%;
+	max-width: 15%;
+	padding:1%;
+	letter-spacing: 0.1em;
+	background-color:#fff; 
+}
+.sear-botton:hover .sear-a{
+ color: #093756;	
+}
+
+/*------------------------------
+*
+*recruit
+*
+*
+--------------------------------*/
+.recruit{
+	margin-top: 20%;
+}
+
+.rec-img{
+	width: 100%;
+}
+
+.rec{
+	display: flex;
+	margin-top: 2%;
+}
+.rec-img{
+	filter: opacity(30%);
+}
+.grec{
+	width: 33.3%;
+}
+.rec-img:hover{
+	filter: opacity(100%);
+}
+
+.rec-box{
+	background-color:#000;
+}
+.rec-1{
+	position: relative;
+}
+.rec-2{
+	position: relative;
+}
+.rec-3{
+	position: relative;
+}
+.rec-text1{
+	position: absolute;
+	text-align: center;
+	top:50%;
+	left: 50%;
+	  -ms-transform: translate(-50%,-50%);
+	  -webkit-transform: translate(-50%,-50%);
+	  transform: translate(-50%,-50%);
+	color: #fffff;
+	font-weight:bold;
+	margin: 2% auto;
+	width: 100%;
+	max-width: 45%;
+	padding:3%;
+	letter-spacing: 0.1em;
+	border: solid
+}
+ 
+
+
+.rec-text2{
+	position: absolute;
+	text-align: center;
+	 top: 50%;
+	  left: 50%;
+	  -ms-transform: translate(-50%,-50%);
+	  -webkit-transform: translate(-50%,-50%);
+	  transform: translate(-50%,-50%);
+	color: #FFFFFF;
+	font-weight:bold;
+	margin: 2% auto;
+	width: 100%;
+	max-width: 45%;
+	padding:3%;
+	letter-spacing: 0.1em;
+	border: solid
+	
+}
+.rec-text3{
+	position: absolute;
+	text-align: center;
+	 top: 50%;
+	  left: 50%;
+	  -ms-transform: translate(-50%,-50%);
+	  -webkit-transform: translate(-50%,-50%);
+	  transform: translate(-50%,-50%);
+	color: #FFFFFF;
+	font-weight:bold;
+	margin: 2% auto;
+	width: 100%;
+	max-width: 45%;
+	padding:3%;
+	letter-spacing: 0.1em;
+	border: solid;
+}
+
+/*------------------------------
+*
+*footer
+*
+*
+--------------------------------*/
+.band{
+	background-color: #093756;
+	padding-top: 2%;
+	display: flex;
+	padding: 2% 5%;
+}
+.nav2 nav{
+	display:flex;
+	color: #FFFFFF;
+	justify-content:space-around;
+}
+.nav2{
+	border-top: solid 2px #FFFFFF;
+}
+.gnav2{
+	color: #FFFFFF;
+	background-color:#093756;
+}
+.foot-img{
+	width: 25%;
+	margin-bottom:2%;
+}
+.access{
+	width: 80%;
+	color: #FFFFFF;
+	line-height: 2em;
+}
+.contact{
+	margin-left: 100px;
+	width: 100%;
+	padding-top: 2%;
+	color: #FFFFFF;
+}
+.contact-border{
+  width: 0.5%;
+  background-color:#FFFFFF;
+}
+.contact-name{
+	font-size: 2vw;
+}
+.contact-text{
+	padding-top: 5%;
+}
+.lineArrow3{
+	height: 15px;
+    border-bottom: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+    transform: skew(40deg);
+    margin-left: 72%;
+    margin-top: -1%;
+}
+.contact-botton{
+	padding-top: 3%;
+}
+.contact-botton-text2{
+	margin-left: 75%;
+	font-size: 1.3vw;
+}
+.moreLink:hover .contact-botton-text2{
+	font-weight: bolder;
+}
+.foot-menu{
+	color: #FFFFFF;
+}
+.inner{
+	margin-top:2%;
+	
+	
+}
+
+
+
+
+
+@media screen and (max-width:375px){
+.pc__img{
+		display: none;
+	}
+/*------------------------------
+*
+*header
+*
+*
+--------------------------------*/
+.logo-sp{
+	width: 35%;
+    margin-top: 5%;
+}
+.slide-top img{
+	height: auto;
+}
+.slid-top{
+	position: relative;
+	}
+.top-text{
+position: absolute;
+top:3%;
+}	
+.gnav{
+		display: none;
+}	
+
+.hamburger {
+  display : block;
+  position: fixed;
+  z-index : 3;
+  right : 13px;
+  top   : 12px;
+  width : 42px;
+  height: 42px;
+  cursor: pointer;
+  text-align: center;
+  background: rgba(255,255,255,0.6);
+}
+.hamburger span {
+  display : block;
+  position: absolute;
+  width   : 30px;
+  height  : 2px ;
+  left    : 6px;
+  background : #fff;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition   : 0.3s ease-in-out;
+  transition        : 0.3s ease-in-out;
+}
+.hamburger span:nth-child(1) {
+  top: 10px;
+}
+.hamburger span:nth-child(2) {
+  top: 20px;
+}
+.hamburger span:nth-child(3) {
+  top: 30px;
+}
+
+/* ナビ開いてる時のボタン */
+.hamburger.active span:nth-child(1) {
+  top : 16px;
+  left: 6px;
+  background :#fff;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform   : rotate(-45deg);
+  transform        : rotate(-45deg);
+}
+
+.hamburger.active span:nth-child(2),
+.hamburger.active span:nth-child(3) {
+  top: 16px;
+  background :#fff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform   : rotate(45deg);
+  transform        : rotate(45deg);
+}
+
+nav.globalMenuSp {
+  position: fixed;
+  z-index : 2;
+  top  : 0;
+  right : 0;
+  color: #fff;
+  background: rgba(9,55,86,0.8);
+  text-align: center;
+  width: 60%;
+  opacity: 0;
+  transition: opacity .6s ease, visibility .6s ease;
+}
+
+nav.globalMenuSp ul {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+nav.globalMenuSp ul li {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  transition: .4s all;
+}
+nav.globalMenuSp ul li:last-child {
+  padding-bottom: 0;
+}
+nav.globalMenuSp ul li:hover{
+  background :#ddd;
+}
+
+nav.globalMenuSp ul li a {
+  display: block;
+  color: #fff;
+  padding: 1em 0;
+  text-decoration :none;
+}
+
+
+/* このクラスを、jQueryで付与・削除する */
+nav.globalMenuSp.active {
+  opacity: 100;
+
+}
+	
+	
+/*------------------------------
+*
+*news
+*
+*
+--------------------------------*/	
+.topics{
+	margin: 0 auto;
+}
+.news-title::before{
+	width: 15px;
+	}
+.slide-top{
+	height: 200px;	
+	}
+.gnews{
+	padding-left:10%;
+		
+}
+.news-top{
+	display: block;	
+	}
+.news{
+	margin-top: 2%;	
+}	
+.news-title{
+	display: table;
+}	
+.news-title2{
+	display: table;
+}
+.topics dl{
+	width: 100%;	
+}	
+.topics dd{
+ margin-left: 25%;	
+}	
+.lineArrow{
+	margin-left: 80%;
+    width: 25%;
+    margin-top: -2%;
+}	
+.news-botton-text{
+	width: 88%;
+	margin-top: 2%;
+}	
+	
+/*------------------------------
+*
+*abouttaiyo
+*
+*
+--------------------------------*/	
+.sp__img{
+	display: block;
+	width: 100%;
+}	
+.gtitle::before{
+	height: 30px;	
+}
+.taiyo-text{
+	width: 70%;
+	line-height: 2;
+}	
+.lineArrow2{
+	width: 20%;
+    margin-top: -2%;
+	margin-left: 61%;
+	}
+/*------------------------------
+*
+*searvice
+*
+*
+--------------------------------*/	
+.gtitle-be::after{
+	height: 30px;	
+}
+.list{
+	width: 100%;	
+}	
+.pc{
+ padding: 10% 2% 10%;
+}	
+.sear-botton{
+margin-top: 4%;
+font-size: 1.5vw;
+max-width: 30%;
+padding: 3%;
+}	
+.sear-botton:hover{
+margin-top: 4%;
+padding: 3%;
+font-size: 1.5vw;
+max-width: 30%;		
+}	
+.list{
+	display: table;	
+	
+}
+.ep{
+	width: 80%;
+	height: auto;
+	margin: 0 auto 7%;
+	
+}
+.pc{
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+}
+	
+/*------------------------------
+*
+*recruit
+*
+*
+--------------------------------*/	
+.rec{
+	display: table;
+	}	
+.grec{
+	width: 100%;
+	}	
+
+
+/*------------------------------
+*
+*footer
+*
+*
+--------------------------------*/		
+.footer-sp{
+	background-color: #093756;	
+}	
+.contact-title-sp{
+	color: #FFFFFF;	
+}	
+.contact-text-sp{
+	color: #FFFFFF;
+	font-size: 1vw;
+	text-align: center;
+    margin-top: 4%;
+}	
+	.lineArrow3{
+		width: 30%;
+       margin: 0 auto;
+		margin-top: -2%;
+}
+	.contact-botton-text2{
+		width: 20%;
+   	    margin: 3% auto 0;
+	}	
+	.foot-img{
+	width: 20%;
+      margin: 4% auto;
+	}	
+	.accsess-text-sp{
+		text-align: center;
+		color: #FFFFFF;
+		font-size: 1vw;
+		padding-bottom:2%;
+	}
+	.foot-menu{
+		font-size: 1vw;
+	}
+	.menu{
+		padding: 1em 5px;
+	}
+	.inner{
+		color: #FFFFFF;
+		font-size: 0.3vw;
+	}
+	
+	}
+
+@media screen and (max-width:768px){
+	.slide-top{
+		height: 400px;
+	}
+}
+
+
+
+
+/*------------------------------
+*
+*slide
+*
+*
+--------------------------------*/
+
+.fade-in-left {
+   opacity: 0;
+   animation: fadein-left 1.5s 2s 2s ease-out forwards;
+}
+@keyframes fadein-left {
+   0% {
+      opacity: 0;
+      transform: translateX(-20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+.fade-in-top {
+   opacity: 0;
+   animation: fadein-top 2s .3s 2s ease-out forwards;
+}
+@keyframes fadein-top {
+   0% {
+      opacity: 0;
+      transform: translateY(-20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+.slide-bottom {
+   opacity: 0;
+   transform: translateY(20px);
+   transition: all 1.3s 0.5s ease-out;
+ }
+
+
+

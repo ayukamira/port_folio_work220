@@ -1,0 +1,239 @@
+@charset "UTF-8";
+/* CSS Document */
+html{
+	font-size:62.5%;/*16px × 62.5%=10px*/
+}
+
+body{
+	color:#00000;
+	font-family:'Yu Mincho', 'Hiragino Mincho ProN', 'serif';
+	font-size: 1.6rem;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+}
+.text-center{
+	text-align: center;
+}
+
+.sp__img{display:none;
+	     
+}
+img{
+	width: 100%;
+	height: auto;
+}
+
+.eng{
+	display: block;
+	font-size: 2vw;
+	line-height: 2em;
+}
+.jpn{
+	display: block;
+	font-size: 1vw;
+	color:#294F75; 
+}
+
+/*------------------------------
+*
+*header
+*
+*
+--------------------------------*/
+ .logo{
+    width:8%;
+    height:5%;
+   margin: 2% auto;
+  }
+
+/*------------------------------
+*
+*main
+*
+*
+--------------------------------*/
+.title{
+	margin-top: 15%;
+	text-align: center;
+	font-size: 3vw;
+}
+.Form {
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 750px;
+margin-bottom: 10%;
+}
+.Form-Item {
+  border-top: 1px solid #ddd;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.Form-Item:nth-child(5) {
+  border-bottom: 1px solid #ddd;
+}
+.Form-Item-Label {
+  width: 100%;
+  max-width: 248px;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  font-size: 1.3vw;
+  color: #294F75;
+}
+.Form-Item-Label.isMsg {
+  margin-top: 8px;
+  margin-bottom: auto;
+}
+
+.Form-Item-Label-Required {
+  border-radius: 6px;
+  margin-right: 8px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width: 20%;
+  display: inline-block;
+  text-align: center;
+  background: #093756;
+  color: #fff;
+  font-size: 1vw;
+}
+
+.Form-Item-Input {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 2%;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 40px;
+  flex: 1;
+  width: 100%;
+  background: #eaedf2;
+  font-size: 1.2vw;
+}
+
+.Form-Item-Textarea {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 216px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+}
+
+.Form-Btn {
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  width: 20%;
+  display: block;
+  letter-spacing: 0.05em;
+  background: #093756;
+  color: #fff;
+  font-size: 1.3vw;
+}
+.Form-Btn:hover{
+margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  width: 20%;
+  display: block;
+  letter-spacing: 0.05em;
+  background: #093756;
+  color: #fff;
+  font-size: 1.5vw;
+  opacity: 0.8;
+	
+}
+.radio{
+	font-size: 1.3vw;
+}
+
+@media screen and (max-width:375px){
+.pc__img{
+		display: none;
+	}
+.sp__img{
+	display: block;	
+	
+	}
+	
+	.title{
+		font-size: inherit;
+	}
+	.logo{
+		width: 20%;
+	}
+	.Form {
+    margin-top: 40px;
+  }
+.Form-Item {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    flex-wrap: wrap;
+  }
+.Form-Item-Label {
+    max-width: inherit;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }	
+ .Form-Item-Label.isMsg {
+    margin-top: 0;
+  }
+
+ .Form-Item-Label-Required {
+    border-radius: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 32px;
+    font-size: 10px;
+  }
+
+ .Form-Item-Input {
+    margin-left: 0;
+    margin-top: 18px;
+    height: 40px;
+    flex: inherit;
+    font-size: 15px;
+  }
+
+ .Form-Item-Textarea {
+    margin-top: 18px;
+    margin-left: 0;
+    height: 200px;
+    flex: inherit;
+    font-size: 15px;
+  }
+.Form-Btn {
+    margin-top: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 160px;
+    font-size: 16px;
+  }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+	
+	
